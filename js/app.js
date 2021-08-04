@@ -11,6 +11,7 @@ var vueApp = new Vue({
         price: 1200,
         tank: 45,
         length: 600,
+        fuelPrice: 31.86,
         travelLength: 0,
     },
     methods: {

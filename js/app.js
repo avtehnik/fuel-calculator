@@ -10,6 +10,7 @@ var vueApp = new Vue({
         price: 1200,
         tank: 45,
         length: 600,
+        persons: 1,
         fuelPrice: 31.86,
         travelLength: 0,
     },
@@ -24,6 +25,9 @@ var vueApp = new Vue({
         },
         kmPrice: function() {
            return (this.tankPrice / this.length).toFixed(2)
+        },
+        journeyPrice: function() {
+           return (this.kmPrice * this.travelLength).toFixed(2)
         }
     }
 });

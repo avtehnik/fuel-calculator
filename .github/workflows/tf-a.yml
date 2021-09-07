@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       branch:
-        description: Please use tag-like format n.n.n-someword (1.111.11-beta)
+        description: Please use tag-like format n.n.n-someword (1.111.11-beta) beta
         required: true
 
 jobs:

@@ -15,4 +15,4 @@ jobs:
       - name: Trigger Release job
         if: github.event_name == 'workflow_dispatch'
         run: |
-          echo "Triggering Test release using BRANCH and TEST_TAG ${{ github.event.inputs.branch }}"
+          echo "Triggering Test release using BRANCH and TEST_TAG ${{ github.event.inputs.branch }}  ${{ github.ref }} "
